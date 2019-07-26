@@ -1,4 +1,4 @@
-package structs
+package maputils
 
 import "encoding/json"
 
