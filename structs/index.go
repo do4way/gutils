@@ -13,3 +13,11 @@ func MapToStruct(m map[string]interface{}, val interface{}) error {
 	}
 	return nil
 }
+
+func OptionalString(m map[string]interface{}, name string) string {
+	vstr := m[name]
+	if vstr != nil {
+		return vstr.(string)
+	}
+	return ""
+}
